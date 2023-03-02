@@ -104,7 +104,7 @@ module "eks" {
   source                          = "terraform-aws-modules/eks/aws"
   version                         = "19.10.0"
   cluster_name                    = local.cluster_name
-  cluster_version                 = "1.24"
+  cluster_version                 = "1.25"
   cluster_enabled_log_types       = ["api", "audit", "authenticator", "controllerManager", "scheduler"]
   vpc_id                          = var.vpc_id
   subnet_ids                      = [aws_subnet.eks-subnet1.id, aws_subnet.eks-subnet2.id, aws_subnet.eks-subnet3.id]
