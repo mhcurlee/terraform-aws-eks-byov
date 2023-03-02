@@ -2,8 +2,8 @@
 
 VPC reqirements:
 
-- private subnet tags:  "private=1"
-- public nat gateways:  "public=1"
+- private subnet tags:       "private=1"
+- public nat gateways tags:  "public=1"
 
 
 
