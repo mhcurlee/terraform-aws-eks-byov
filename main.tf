@@ -115,7 +115,7 @@ module "eks" {
   cluster_endpoint_public_access  = true
   cluster_endpoint_private_access = true
   cluster_service_ipv4_cidr       = "10.180.0.0/16"
-  #control_plane_subnet_ids        = data.aws_subnets.private_subs.ids
+  control_plane_subnet_ids        = data.aws_subnets.private_subs.ids
 
   cluster_encryption_config = {
       provider_key_arn = aws_kms_key.eks.arn
